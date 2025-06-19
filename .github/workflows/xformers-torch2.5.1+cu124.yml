@@ -45,3 +45,7 @@ jobs:
         with:
           name: xformers-wheel-cu124
           path: dist/*.whl
+
+      - name: Set output
+        run: echo "example=hello" >> $GITHUB_OUTPUT
+        id: example_step
